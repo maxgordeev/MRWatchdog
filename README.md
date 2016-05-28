@@ -12,7 +12,7 @@ NSTimeInterval const delayInMSec = 300; // ms
 
 Start to catch use-cases that are freezes UI for more than 300 ms:
 ```objective-c
-[MGWatchdog start];
+[MRWatchdog start];
 ```
 
 After catching an exception you can simply analyze Main thread call stack and find the problem in your code.
@@ -20,18 +20,18 @@ After catching an exception you can simply analyze Main thread call stack and fi
 
 Stop the watchdog:
 ```objective-c
-[MGWatchdog stop];
+[MRWatchdog stop];
 ```
 
 
 If you have an unfixable UI freeze (ex. using of thirdparty UI libraries) you can simply tell watchdog to skip observing freezes for (2 * delay) ms:
 ```objective-c
-[MGWatchdog skip];
+[MRWatchdog skip];
 ```
 
 ## Installation
 
-MGWatchdog is available through [CocoaPods](http://cocoapods.org). To install
+MRWatchdog is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
