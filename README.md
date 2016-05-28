@@ -6,7 +6,7 @@ Setup with delay and handler:
 ```objective-c
 NSTimeInterval const delayInMSec = 300; // ms
 [MRWatchdog setupWithDelay:delayInMSec handler:^{
-   std::runtime_error("Possible UI freeze!");
+   throw std::runtime_error("Possible UI freeze!");
 }];
 ```
 
