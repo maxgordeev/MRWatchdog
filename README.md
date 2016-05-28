@@ -28,13 +28,3 @@ If you have an unfixable UI freeze (ex. using of thirdparty UI libraries) you ca
 ```objective-c
 [MRWatchdog skip];
 ```
-
-## Installation
-
-MRWatchdog is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-platform :ios, '7.0'
-pod "MRWatchdog"
-```
